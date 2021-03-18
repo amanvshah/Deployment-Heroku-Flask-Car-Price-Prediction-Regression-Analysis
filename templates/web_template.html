@@ -1,16 +1,24 @@
 <html>
 <body>
- <font face = "Verdana" size = "15">Predict the Price of Cars using Regression Analysis</font><br />
- <font face = "Arial" size = "15">Enter Engine Size from range of 61 to 326</font><br />
- <font face = "Arial" size = "15">Enter 1 is the car company name is BMW, otherwise enter 0</font><br />
- <font face = "Arial" size = "15">Enter 1 is the car company name is Porsche, otherwise enter 0</font><br />
- <font face = "Arial" size = "15">Enter 1 if the car is 2 cylinder engine, otherwise enter 0</font><br />
+ <font face = "Verdana" size = "8">Predict the Price of Cars using Regression Analysis</font><br />
+ <br>
+ <br>
+ <br>
+ <font face = "Arial" size = "5">Enter Engine Size from range of 61 to 326</font><br />
+ <font face = "Arial" size = "5">Enter 1 is the car company name is BMW, otherwise enter 0</font><br />
+ <font face = "Arial" size = "5">Enter 1 is the car company name is Porsche, otherwise enter 0</font><br />
+ <font face = "Arial" size = "5">Enter 1 if the car is 2 cylinder engine, otherwise enter 0</font><br />
  <form action="{{ url_for('predict_model')}}"method="post">
-  <font face = "Verdana" size = "15"><input type="text" name="Engine Size" placeholder="Engine Size" required="required" /></font><br />
-  <input type="text" name="Car Company BMW" placeholder="Is car company BMW?" required="required" />
-  <input type="text" name="Car Company Porsche" placeholder="Is the car company Porsche?" required="required" />
-  <input type="text" name="2 Cylinder Engine" placeholder="Is the car 2 cylinder engine?" required="required" />
-  <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  <input type="text" name="Engine Size" placeholder="Engine Size" required="required" /><br />
+  <br />
+  <input type="text" name="Car Company BMW" placeholder="Is car company BMW?" required="required" /><br />
+  <br />
+  <input type="text" name="Car Company Porsche" placeholder="Is the car company Porsche?" required="required" /><br />
+  <br />
+  <input type="text" name="2 Cylinder Engine" placeholder="Is the car 2 cylinder engine?" required="required" /><br />
+  <br />
+  <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button><br />
+  <br />
  </form>
  {{ car_price_prediction }}
  </div>
