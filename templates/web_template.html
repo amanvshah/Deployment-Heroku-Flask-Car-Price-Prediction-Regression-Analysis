@@ -1,0 +1,18 @@
+<html>
+<body>
+ <h1>Predict the Price of Cars using Regression Analysis</h1>
+ <h1>Enter Engine Size from range of 61 to 326</h1>
+ <h1>Enter 1 is the car company name is BMW, otherwise enter 0</h1>
+ <h1>Enter 1 is the car company name is Porsche, otherwise enter 0</h1>
+ <h1>Enter 1 if the car is 2 cylinder engine, otherwise enter 0</h1>
+ <form action="{{ url_for('predict_model')}}"method="post">
+  <input type="text" name="Engine Size" placeholder="Engine Size" required="required" />
+  <input type="text" name="Car Company BMW" placeholder="Is car company BMW?" required="required" />
+  <input type="text" name="Car Company Porsche" placeholder="Is the car company Porsche?" required="required" />
+  <input type="text" name="2 Cylinder Engine" placeholder="Is the car 2 cylinder engine?" required="required" />
+  <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+ </form>
+ {{ car_price_prediction }}
+ </div>
+</body>
+</html>
