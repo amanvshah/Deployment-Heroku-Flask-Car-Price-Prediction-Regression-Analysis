@@ -1,23 +1,17 @@
 <html>
 <body>
- <h1>Predict the Price of Cars using Regression Analysis</h1>
- <h1>Enter Engine Size from range of 61 to 326</h1>
- <h1>Enter 1 is the car company name is BMW, otherwise enter 0</h1>
- <h1>Enter 1 is the car company name is Porsche, otherwise enter 0</h1>
- <h1>Enter 1 if the car is 2 cylinder engine, otherwise enter 0</h1>
+ <font face = "Verdana" size = "15">Predict the Price of Cars using Regression Analysis</font><br />
+ <font face = "Arial" size = "15">Enter Engine Size from range of 61 to 326</font><br />
+ <font face = "Arial" size = "15">Enter 1 is the car company name is BMW, otherwise enter 0</font><br />
+ <font face = "Arial" size = "15">Enter 1 is the car company name is Porsche, otherwise enter 0</font><br />
+ <font face = "Arial" size = "15">Enter 1 if the car is 2 cylinder engine, otherwise enter 0</font><br />
  <form action="{{ url_for('predict_model')}}"method="post">
-  <br>
-  <input type="text" name="Engine Size" placeholder="Engine Size" required="required" />
-  <br>
+  <font face = "Verdana" size = "15"><input type="text" name="Engine Size" placeholder="Engine Size" required="required" /></font><br />
   <input type="text" name="Car Company BMW" placeholder="Is car company BMW?" required="required" />
-  <br>
   <input type="text" name="Car Company Porsche" placeholder="Is the car company Porsche?" required="required" />
-  <br>
   <input type="text" name="2 Cylinder Engine" placeholder="Is the car 2 cylinder engine?" required="required" />
-  <br>
   <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
  </form>
- <br>
  {{ car_price_prediction }}
  </div>
 </body>
